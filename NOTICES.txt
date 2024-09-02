@@ -1,0 +1,15 @@
+npm install -g json-server@0.17.4: comando para instalar o json globalmente na máquina
+
+Para conseguir executar o JSON Server, devemos habilitar via Powershell:
+
+Para verificar a política de execução de scripts atual, executar o comando: Get-ExecutionPolicy
+Para permitir a execução, rodar o comando: Set-ExecutionPolicy RemoteSigned, depois confirmar com "S" ou "Y", dependendo do idioma do pc
+
+Para reverter a alteração (que é o recomendado, após finalizar o uso do JSON Server), utilizar o comando: Set-ExecutionPolicy Restricted
+
+*TUDO ISSO DEVE SER FEITO COM O PROMPT EXEDCUTANDO EM MODO ADM*
+
+json-server --watch backend/videos.json: comando para rodar a api desse projeto
+
+Na programação síncrona, uma linha de código só será executada após a finalização de uma superior. Já na programação assíncrona, uma linha não espera
+uma linha ser concluída para passar para a próxima. Isso é muito útil, para pular tarefas que exigem maior tempo de espera, por exemplo carregar uma foto
